@@ -1,52 +1,130 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>inlämningsuppgift 1</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <form class="container">
-        <h1>Aggresiv undersökning</h1>
-        <p style="font-weight: 700;">MATA IN DITT NAMN</p>
-        <span><input size="35" maxlength="20"></span>
-        <label>SKRIV LITE TEXT OM DIG SJÄLV!</label>
-        <span><textarea style="overflow: hidden; resize: none; background-color: lightgreen;" rows="4" cols="30"></textarea></span>
-        <i>SPELAR DU NÅGON SPORT?!</i>
-        <div class="rowContainer">
-            <input type="radio" name="sport" value="JA">
-            <label>JA</label>
-            <input type="radio" name="sport" value="NEJ">2
-            <label>NEJ</label>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/Startsida.css">
+        <link rel="stylesheet" href="CSS/Panels.css">
+        <link rel="stylesheet" href="CSS/Navbar.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <a class="navItem" href="Startsida.html">Startsida</a>
+            <div class="navItem">
+                    <a onclick="myFunction()" class="dropbtn">Navigate</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#top">Top</a>
+                        <a href="#second">javascriptbegin</a>
+                        <a href="#third">javascriptDOM</a>
+                        <a href="#contact">WIP</a>
+                    </div>
+                </div>
+            <a class="navItem" href="../Allt/Allt.html">Webb2</a>
+            <a class="navItem" href="../2/2.html">Write</a>     
         </div>
-        <i><b>HUR FÖREDRAR DU ATT LÄSA OM INTRESSANTA SAKER?!!</b></i>
-        <div class="rowContainer">
-            <input type="checkbox" value="Böcker">
-            <label>Böcker</label>
-            <input type="checkbox" value="Tidningar">
-            <label>Tidningar</label>
-            <input type="checkbox" value="Online">
-            <label>Online</label>
+        <div class="panel" id="top">
+            
         </div>
-        <div class="rowContainerS">
-            <p>VÄLJ EN FAVORITGENRE ELLER INTE VÄLJ</p>
-            <select name="genres">
-                <option></option>
-                <option value="Action">Action</option>
-                <option value="Romantik">Romantik</option>
-                <option value="Komedi">Komedi</option>
-                <option value="Drama">Drama</option>
-                <option value="Skräck">Skräck</option>
-            </select>
+        <div class="panel" id="second">
+            <div class="content">
+                <h2>javascriptbegin</h2>
+            </div>
+            <div class="box">
+                <p style="margin-bottom: 10px;">Exempeluppgifter javascriptbegin</p>
+                <a class="button" onclick="Alert()">Alert</a>
+                <a class="button" onclick="Prompt()">Prompt</a>
+                <a class="button" onclick="goToWeb()">GoToWeb</a>
+                <a class="button" onclick="number()">Number</a>
+                <p id="Svar1" style="margin-top: 10px;">Svar visas här</p>
+            </div> 
+            <br>
+            <div class="Right">
+                <div class="containerForBox">
+                    <div class = "boxInBox">
+                        <p>Date</p>
+                        <a onclick="getDate()" class="button" id="buttonWithMargin">Date</a>
+                        <p id="svarDate">Svar</p>
+                    </div>
+                    <div class="boxInBox">
+                        <p>Array</p>
+                        <a class="button"id="buttonWithMargin">Array</a>
+                        <p>Svar</p>
+                    </div>
+                    <div class="boxInBox">
+                        <p>Forms</p>
+                        <a class="button"id="buttonWithMargin">Form</a>
+                        <p>Svar</p>
+                    </div>
+                </div>
+                <div class="dragContainer">
+                    <p>Drag and drop</p>
+                    <div id="dragSquare" draggable="true" ondragstart="drag(event)">
+                        <p>Drag me</p>
+                    </div>
+                    <div class="landingArea">
+                        <div class="landingpad" id="landingpad1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <div class="landingpad" id="landingpad2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button><a href="http://google.com">Lämna in</a></button>
-    </form>
-    <script src="" async defer></script>
-</body>
-
+        <div class="panel" id="third">
+            <div class="content">
+                <h2>javascriptDOM pptx</h2>
+            </div>
+            <div class="simpleRowContainer">
+                <div class="Right" id="noLeft">
+                    <div class="containerForBox">
+                     <div class="boxInBox">
+                            <p>Skriv något för att lägga till i lista</p>
+                            <input class="inputField1" id="inputField1" type="text"></input>
+                         <div class="simpleColumnContainer">
+                                <a onclick="enterItem()" class="button" id="buttonWithoutMargin">Lägg till</a>
+                                <a onclick="removelastItem()" class="button" id="buttonWithoutMargin">Rensa</a>
+                                <p>Max antal är 6st</p>
+                            </div>
+                            <div class="listaSvar">
+                                <ul id="ulList"></ul>
+                         </div>
+                        </div>
+                     <div class="boxInBox">
+                        <p>Simple if else example</p>
+                        <a class="button" id="buttonWithoutMargin">If else</a>
+                        <p>Beräkna hypotenusa</p>
+                        <a onclick="getHyp()" class="button" id="buttonWithoutMargin">Beräkna</a>
+                        <ul class="styledList">
+                            <li>Onload()</li>
+                            <li>Eval Funktion</li>
+                            <li>Substring</li>
+                            <li>For/While loop</li>
+                        </ul>
+                     </div>
+                        <input class="inputField1" id="inputField2" type="number"></input>
+                        <a onclick="count()" class="button" id="buttonWithoutMargin">Knapp</a>
+                    </div>
+                </div>
+                <div class="Right" id="noLeft">
+                    <div class="boxInBox">
+                        <a onclick="hideToggle()" class="button" id="buttonWithMargin">Toggle</a>
+                        <p id="hideThis">Press button to toggle</p>
+                    </div>
+                    <div class="boxInBox">
+                        <p>Harry martinsson</p>
+                        <a href="../Harry Martinsson övning 3 - DOM/Harry Övning 3.html" class="button" id="buttonWithoutMargin">Knapp till Harry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/Exempel.js" async defer></script>
+        <script src="JS/Drag&Drop.js" async defer></script>
+        <script src="JS/Date.js" async defer></script>
+        <script src="JS/Dropdown.js" async defer></script>
+        <script src="JS/AddToList.js" async defer></script>
+        <script src="JS/Hypotenuse.js" async defer></script>
+        <script src="JS/CountInput.js" async defer></script>
+        <script src="JS/toggleHide.js" async defer></script>
+    </body>
 </html>

@@ -1,0 +1,26 @@
+/* Panels */
+.panel {
+	position: relative;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#top {
+	background-image: url("../Bilder/AbstractArrayThing500samples.png");
+}
+
+#second {
+	background: rgb(164,165,166);
+	background: linear-gradient(0deg, rgba(164,165,166,1) 0%, rgba(97,107,118,1) 51%);
+	clear: both;
+	margin: 0px;
+}
+
+#third {
+	background: rgb(97,107,118);
+	background: linear-gradient(0deg, rgba(97,107,118,1) 0%, rgba(164,165,166,1) 100%);
+	clear: both;
+	margin: 0px;
+} 
