@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue;
+    color: black;
+    height: 100vh;
+    width: calc(100vw - 20px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.summary {
+    background-color: rgba(255, 0, 0, 0.466);
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.page-wrapper {
+
+}
+
+.intro {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+}
+
+.banner {
+    
+}
+
+.preamble {
+
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.808);
+  }
+
+  .footerA {
+      margin: 10px;
+  }
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    /* background-image: linear-gradient(red, yellow); */
+    margin: 10px;
+}
+
+.participation {
+    animation-name: spin;
+    animation-duration: 1500ms; /* How long lasts 1 turn */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
