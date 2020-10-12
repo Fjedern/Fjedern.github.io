@@ -4,7 +4,8 @@ body {
     background-color: #DBE5FF;
     color: black;
     height: 100vh;
-    width: calc(100vw - 20px);
+    /* width: calc(100vw - 20px); */
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
@@ -13,10 +14,13 @@ body {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
 }
 
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 @keyframes example {
     from {background-color: #4b6cb7; color: black;}
