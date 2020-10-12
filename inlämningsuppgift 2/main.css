@@ -1,18 +1,48 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightskyblue;
+    background-color: #DBE5FF;
     color: black;
     height: 100vh;
     width: calc(100vw - 20px);
 
     display: flex;
     flex-direction: column;
+
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    from {background-color: #4b6cb7;}
+    to {background-color: #182848;}
+  }
+
+
+h1, h2, h3 {
+    color: #091534;
 }
 
 .summary {
-    background-color: rgba(255, 0, 0, 0.466);
-    box-shadow: 2px 2px 4px #000000;
+    background-color: #678FFE;
+    box-shadow: 2px 2px 4px #091534;
+    padding: 5px;
+}
+
+.preamble {
+    background-color: #678FFE;
+    box-shadow: 2px 2px 4px #091534;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
 }
 
 .page-wrapper {
@@ -31,9 +61,7 @@ body {
     
 }
 
-.preamble {
 
-}
 
 footer {
     position: fixed;
@@ -42,7 +70,7 @@ footer {
     left: 0;
 
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: #091534;
   }
 
   .footerA {
@@ -63,7 +91,7 @@ div {
 
 .participation {
     animation-name: spin;
-    animation-duration: 1500ms; /* How long lasts 1 turn */
+    animation-duration: 5000ms; /* How long lasts 1 turn */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
