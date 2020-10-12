@@ -16,6 +16,8 @@ body {
 }
 
 
+
+
 @keyframes example {
     from {background-color: #4b6cb7; color: black;}
     to {background-color: #182848; color: white;}
@@ -42,6 +44,7 @@ h1, h2, h3 {
     background-color: #678FFE;
     box-shadow: 2px 2px 4px #091534;
     padding: 5px;
+
 }
 
 a {
@@ -82,11 +85,25 @@ footer {
 
     text-align: center;
     background-color: #091534;
-  }
+    font-size: 20px;
+}
 
-  .footerA {
-      margin: 10px;
-  }
+.footerA {
+    margin: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+
+    display: inline-block;
+}
+/* i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;
+  
+  } */
 
 
 .wrapper {
