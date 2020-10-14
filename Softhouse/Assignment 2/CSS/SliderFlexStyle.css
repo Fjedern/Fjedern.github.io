@@ -1,0 +1,269 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	/* width: 100vw; */
+	/* margin: 0px; */
+	color: white;
+	/* overflow-y: hiddent; */
+	overflow-x: hidden;
+}
+
+*::-webkit-scrollbar { /* WebKit */  
+    width: 0;
+    height: 0;
+}
+
+#slider {
+	overflow: hidden;
+}
+
+#slider {
+	display: block;
+	width: 17280px;
+}
+
+.slidercontainer {
+	display: block;
+	width: 17280px;
+}
+
+#slider .slide {
+	float: left;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	background-position: center center;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+	
+.navbar {
+	height: 50px;
+	background-color: rgba(255,255,255,.2);
+	
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+	text-align: center;
+	
+	display: flex;
+	flex: 0 0 8vh;
+	
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+a {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	height: 50px;
+	color: white;
+	padding: 20px 16px;
+	text-decoration: none;
+	text-shadow: 0px 0px 8px #3b424f, 0px 0px 4px #FFF;
+	transition: color 1s;
+	
+	
+	margin-left: 5px;
+	margin-right: 5px;
+	
+	flex: 1;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar a:hover{
+	color: #39539a;
+}
+
+#top {
+	height: 100%;
+	background-image: url('../Pics/images/goldengate.jpg');
+	background-position: top center;
+	border-top-width: 4px;
+	background-attachment: fixed;
+}
+
+#firstslide {
+	height: 100%;
+	background-image: url('../Pics/images/goldengate.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#secondslide {
+	height: 100%;
+	background-image: url('../Pics/images/pyr.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#thirdslide {
+	height: 100%;
+	background-image: url('../Pics/images/abusimbel.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#fourthslide {
+	height: 100%;
+	background-image: url('../Pics/images/greatwall.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#fifthslide {
+	height: 100%;
+	background-image: url('../Pics/images/highway.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#sixthslide {
+	height: 100%;
+	background-image: url('../Pics/images/kukulkan.jpeg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+#seventhslide {
+	height: 100%;
+	background-image: url('../Pics/images/petra.jpeg');
+	background-position: top center;
+	background-attachment: fixed;
+}
+
+
+#topslide {
+	height: 100%;
+	background-image: url('../Pics/images/goldengate.jpg');
+	background-position: top center;
+	background-attachment: fixed;
+	
+}
+
+
+
+.button{
+	border: 2px solid white;
+	padding: 15px;
+	margin: 0% 0% 0% 0%;
+	font-size: 1.2em;
+	background-color: rgba(255,255,255,.2);
+	text-align: center;
+	width: 40%;
+	align-self: center;
+	height: 20px;
+}
+
+.info {
+	text-align: center;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.info p {
+	font-size: 1.8em;
+}
+
+.info h1 {
+	font-size: 3em;
+}
+
+
+
+p {
+	color: black;
+	text-shadow: none;
+}
+
+	
+
+/* __________________Media Quieries__________________ */
+
+#checkbox, .toggle {
+	display: none;
+	z-index: 999;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+	.container, .navbar {
+		flex-direction: column;
+	}
+	
+	.toggle {
+		display: block;
+		text-align: center;
+		line-height: 45px;
+		cursor: pointer;
+		height: 50px;
+		visibility: visible;
+	}
+	
+	.navbar {
+		height: 0px;
+		transition: all .4s linear;
+	}
+	
+	.navbar a {
+		visibility: hidden;
+		
+	}
+
+	#checkbox:checked + label .navbar{
+		height: 320px;
+		top: 50px;
+	}
+	
+	#checkbox:checked + label .navbar a {
+		visibility: visible;
+		margin-top: 5px;
+		flex: 1 1 5vh;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	img {
+		width: 100px;
+		height: 109px;
+	}
+	
+	.smallertext {
+		font-size: 2em;
+	}
+	
+	.kort p {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -32,35 +32,50 @@
         });
     </script>
 </head>
+
 <body>
-    <div id="navbar">
+    <nav id="navbar">
         <a class="navItem" href="index.html">Startsida</a>
         <div class="navItem">
-            <a onclick="myFunction()" class="dropbtn">Inlämningsuppgifter</a>
+            <a onclick="myFunction()" class="dropbtn">Assignments</a>
             <div id="myDropdown" class="dropdown-content">
-                <a class="navItem2" href="inlämningsuppgift 1/index.html">inlämning 1</a>
-                <a class="navItem2" href="inlämningsuppgift 2/index.html">inlämning 2</a>
-                <a class="navItem2" href="inlämningsuppgift 3/">inlämning 3</a>
+                <a class="navItem2" href="Softhouse/Assignment 1/index.html">Assignment 1</a>
+                <a class="navItem2" href="Softhouse/Assignment 2/OnepagerFlex.html">Assignment 2</a>
             </div>
         </div>
+        <a class="navItem" href="">portfolio</a>
         <a class="navItem" href="">placeholder</a>
-
-    </div>
-    <div class="panel" id="top">
-        <div class="arrowContainer">
-            <!-- arrows -->
-            <a class="arrow" href='#black'><span class="fas fa-caret-up fa-2x "></span></a>
-            <a class="arrow" href='#black'><span class="fas fa-caret-down fa-2x"></span></a>
-        </div>
-    </div>
-    <div class="panel" id="black">
-        <div class="arrowContainer">
-            <!-- arrows -->
-            <a class="arrow" href='#top'><span class="fas fa-caret-up fa-2x "></span></a>
-            <a class="arrow" href='#top'><span class="fas fa-caret-down fa-2x"></span></a>
-        </div>
-    </div>
-
+    </nav>
+    <main>
+        <section class="panel" id="top">
+            <div class="arrowContainer">
+                <!-- arrows -->
+                <a class="arrow" href='#second'><span class="fas fa-caret-up fa-2x "></span></a>
+                <a class="arrow" href='#second'><span class="fas fa-caret-down fa-2x"></span></a>
+            </div>
+        </section>
+        <section class="panel" id="second">
+            <div class="arrowContainer">
+                <!-- arrows -->
+                <a class="arrow" href='#top'><span class="fas fa-caret-up fa-2x "></span></a>
+                <a class="arrow" href='#top'><span class="fas fa-caret-down fa-2x"></span></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Fjedern" title="Visit my github for all my projects">
+            <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        <a href="https://steamcommunity.com/id/Fjedern/" title="My steam profile">
+            <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </footer>
     <script src="JS/Dropdown.js" async defer></script>
 </body>
 
