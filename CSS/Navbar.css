@@ -1,3 +1,4 @@
+
 /* Navbar */
 #navbar {
     height: 40px;
@@ -6,9 +7,17 @@
 	top: 0;
 	z-index: 9999;
 	text-align: center;
+	
+
+	/* background-color: blue; */
+}
+
+.nav {
 	display: flex;
     flex: 0 0 8vh;
-    justify-content: flex-end;
+	justify-content: flex-end;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .navItem {
@@ -21,7 +30,9 @@
     margin-top: 5px;
     display: inline-block;
 	position: relative;
-    margin-right: 50px;
+	margin-right: 50px;
+	
+	/* background-color: red; */
 }
 
 /* dropdown items */
@@ -90,3 +101,77 @@
 }
 
 .show { display: block; }
+
+nav input, .toggle {
+	display: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 550px){
+	.nav {
+		flex-direction: column;
+	}
+
+	.toggle {
+		visibility: visible;
+		height: 50px;
+		display: block;
+		text-align: center;
+		line-height: 45px;
+		color: white;
+	}
+
+	.nav {
+		height: 0px;
+		transition: all .4s linear;
+	}
+}
+
+
+
+
+
+
+/* #checkbox, .toggle {
+	display: none;
+	z-index: 999;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+	#navbar {
+		flex-direction: column;
+	}
+	
+	.toggle {
+		display: block;
+		text-align: center;
+		line-height: 45px;
+		cursor: pointer;
+		height: 50px;
+		visibility: visible;
+	}
+	
+	#navbar {
+		height: 0px;
+		transition: all .4s linear;
+	}
+	
+	#navbar a {
+		visibility: hidden;
+		
+	}
+
+	#checkbox:checked + label .navbar{
+		height: 320px;
+		top: 50px;
+	}
+	
+	#checkbox:checked + label .navbar a {
+		visibility: visible;
+		flex: 1 1 5vh;
+	}
+}
+ */
