@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="CSS/navbarBootstrap.css">
     <link rel="stylesheet" href="CSS/Startsida.css">
     <link rel="stylesheet" href="CSS/Panels.css">
+    <link rel="stylesheet" href="CSS/second.css">
+    <link rel="stylesheet" href="CSS/timeline.css">
+    <link rel="stylesheet" href="CSS/timeline2.css">
     <!-- -- -->
 
     <!-- font awesome -->
@@ -27,10 +30,6 @@
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <!-- -- -->
 
-    <!-- Initialize AOS -->
-    <script>
-        AOS.init();
-    </script>
 </head>
 
 <body>
@@ -62,7 +61,7 @@
                     </div>
                 </li>
                 <li class="nav-item ml-auto">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link disabled" href="#timeline2">Disabled</a>
                 </li>
             </ul>
         </div>
@@ -90,7 +89,7 @@
         <section class="panel" id="top">
             <div class="arrowContainer">
                 <!-- arrows -->
-                <a class="arrow" href='#second'><span class="fas fa-caret-up fa-2x "></span></a>
+                <a class="arrow" href='#timeline'><span class="fas fa-caret-up fa-2x "></span></a>
                 <a class="arrow" href='#second'><span class="fas fa-caret-down fa-2x"></span></a>
             </div>
         </section>
@@ -98,7 +97,153 @@
             <div class="arrowContainer">
                 <!-- arrows -->
                 <a class="arrow" href='#top'><span class="fas fa-caret-up fa-2x "></span></a>
-                <a class="arrow" href='#top'><span class="fas fa-caret-down fa-2x"></span></a>
+                <a class="arrow" href='#timeline'><span class="fas fa-caret-down fa-2x"></span></a>
+            </div>
+            <div class="aos-item" data-aos="fade-up" data-aos-offset="600">
+                <div class="aos-item__inner">
+                    <h1>Rubrik</h1>
+                    <p id="test">aaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+            </div>
+        </section>
+        <section class="panel" id="timeline">
+            <div class="arrowContainer">
+                <!-- arrows -->
+                <a class="arrow" href='#second'><span class="fas fa-caret-up fa-2x "></span></a>
+                <a class="arrow" href='#timeline2'><span class="fas fa-caret-down fa-2x"></span></a>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-5">HTML & CSS</h4>
+                                <div class="hori-timeline" dir="ltr">
+                                    <ul class="list-inline events">
+                                        <li class="list-inline-item event-list">
+                                            <div class="px-4">
+                                                <div class="event-date bg-soft-primary text-primary">12 Okt</div>
+                                                <h5 class="font-size-16">Inlämningsuppgift 1</h5>
+                                                <p class="text-muted">Erfans första kunskapskontroll. Inlämningsuppgitft
+                                                    1. Skapa en simpel hemsida</p>
+                                                <div>
+                                                    <a href="Erfan/inlämningsuppgift 1/index.html"
+                                                        class="btn btn-primary btn-sm">Read more</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-inline-item event-list">
+                                            <div class="px-4">
+                                                <div class="event-date bg-soft-success text-success">23 Okt</div>
+                                                <h5 class="font-size-16">Inlämningsuppgift 2</h5>
+                                                <p class="text-muted">Erfans inlämningsuppgift 2. Inlämning igen till
+                                                    Yazeen. CSS zen garden</p>
+                                                <div>
+                                                    <a href="Erfan/inlämningsuppgift 2/index.html"
+                                                        class="btn btn-primary btn-sm">Read more</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-inline-item event-list">
+                                            <div class="px-4">
+                                                <div class="event-date bg-soft-danger text-danger">TBA</div>
+                                                <h5 class="font-size-16">Projekt</h5>
+                                                <p class="text-muted">If several languages coalesce the grammar of the
+                                                    resulting simple and regular</p>
+                                                <div>
+                                                    <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card -->
+                    </div>
+                </div>
+        </section>
+        <section class="panel" id="timeline2">
+            <div class="arrowContainer" style="background-color: red;">
+                <!-- arrows -->
+                <a class="arrow" href='#second'><span class="fas fa-caret-up fa-2x "></span></a>
+                <a class="arrow" href='#timeline2'><span class="fas fa-caret-down fa-2x"></span></a>
+            </div>
+            <div class="containerTimeline">
+                <div class="timeline-parcours" style="background-color: blue;">
+                    <div class="container-info">
+                        <div class="timeline-section-tl">
+                            <div class="parcours-box parc1">
+                                <div class="infobox date1">
+                                    <h3>Inlämningsuppgift 1</h3>
+                                    <p class="subt-infobox">Erfan uppgift 1</p>
+                                    <p class="infobox-text">Skapa en simpel hemsida.</p>
+                                    <a href="Erfan/inlämningsuppgift 1/index.html">Link</a>
+                                </div>
+                                <div class="fleche-bloc"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="parcours-box parc2">
+                                <div class="infobox date1">
+                                    <h3>Titre titre 2</h3>
+                                    <p class="subt-infobox">ceci est un test</p>
+                                    <p class="infobox-text">ceci est un court texte d'information par rapport à un
+                                        évènement
+                                    </p>
+                                </div>
+                                <div class="fleche-bloc"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="parcours-box parc3">
+                                <div class="infobox date1">
+                                    <h3>Titre titre 3</h3>
+                                    <p class="subt-infobox">ceci est un test</p>
+                                    <p class="infobox-text">ceci est un court texte d'information par rapport à un
+                                        évènement
+                                    </p>
+                                </div>
+                                <div class="fleche-bloc"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="parcours-box parc4">
+                                <div class="infobox date1">
+                                    <h3>Titre titre 4</h3>
+                                    <p class="subt-infobox">ceci est un test</p>
+                                    <p class="infobox-text">ceci est un court texte d'information par rapport à un
+                                        évènement
+                                    </p>
+                                </div>
+                                <div class="fleche-bloc"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-time-line">
+                        <div class="time-line-parcours">
+                            <div class="timeline-indicator">
+                                <p class="indicator-val"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-bulle">
+                        <div class="timeline-section-tl">
+                            <div class="tl-round round1"></div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="tl-round round2"></div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="tl-round round3"></div>
+                        </div>
+                        <div class="timeline-section-tl">
+                            <div class="tl-round round4"></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
@@ -128,7 +273,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async defer></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="JS/timeline2.js"></script>
+    <!-- Initialize AOS and Timeline -->
+    <script>
+        AOS.init();
+
+        function reste_a_faire() {
+            return true;
+        }
+
+        if (reste_a_faire())
+            console.log('rien n\'est fait');
+    </script>
 </body>
 
 </html>

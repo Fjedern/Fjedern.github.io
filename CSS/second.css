@@ -1,0 +1,17 @@
+.aos-item {
+    position: relative;
+    
+    padding: 20px;
+    top: 10%;
+    left: 10%;
+    /* margin-top: 100px;
+    margin-left: 10%; */
+
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border: 5px solid white;
+    color: white;
+}
