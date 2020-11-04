@@ -61,17 +61,17 @@
 	margin: auto;
 	height: 1px;
 	width: 100%;
-	background: black;
+	background: #408ac7;
     transition: width .5s ease, background-color .5s ease;
 }
 
 .nav-link:hover:after {
     width: 0%;
-	background: black;
+	background: #408ac7;
 } 
 
 .navbar-nav .nav-link {
-    color: black;
+    color: #408ac7;
 }
 
 .dropdown-toggle:after {
